@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Pokemon Primary Designers</title>
@@ -8,13 +8,54 @@
             border-collapse: collapse;
         }
         
-        thead {
-            background: black;
-            color: white;
+        @media (prefers-color-scheme: light) {
+            body{
+                background-color: white;
+                color: black;
+            }
+
+            thead {
+                background: black;
+                color: white;
+            }
+            
+            tbody > tr:nth-child(2n) {
+                background: lightgray;
+            }
+
+            li:target {
+                border-left: 2px solid black;
+                padding-left: 6px;
+            }
         }
-        
-        tbody > tr:nth-child(2n) {
-            background: lightgray;
+
+        @media (prefers-color-scheme: dark) {
+            body{
+                background-color: #283149;
+                color: #dbedf3;
+            }
+
+            thead {
+                background: #dbedf3;
+                color: #283149;
+            }
+            
+            tbody > tr:nth-child(2n) {
+                background: #324558;
+            }
+
+            li:target {
+                border-left: 2px solid #dbedf3;
+                padding-left: 6px;
+            }
+
+            a:link {
+                color: #c2c2ff;
+            }
+
+            a:visited {
+                color: #E8B3FF;
+            }
         }
         
         td:not(.name) {
@@ -23,11 +64,6 @@
         
         td span {
             line-height: 0;
-        }
-        
-        li:target {
-            border-left: 2px solid black;
-            padding-left: 6px;
         }
     </style>
 </head>
@@ -631,20 +667,24 @@
         <li>Dunsparce <sup><a href="#note15">15</a></sup></li>
         <li>Rayquaza <sup><a href="#note10">10</a></sup></li>
         <li>Magmortar <sup><a href="#note5">5</a></sup></li>
-        <li>Darkrai <sup><a href="#note10">10</a></sup></li>
+        <li>Darkrai <sup><a href="#note10">10</a> <a href="#note46">46</a></sup></li>
     </ul>
     <h2>Takao Unno</h2>
     <ul>
-        <li>Cobalion <sup><a href="#note19">19</a></sup></li>
-        <li>Terrakion <sup><a href="#note19">19</a></sup></li>
-        <li>Virizion <sup><a href="#note19">19</a></sup></li>
+        <li>Whismur <sup><a href="#note54">54</a></sup></li>
+        <li>Loudred <sup><a href="#note54">54</a></sup></li>
+        <li>Chimchar <sup><a href="#note23">23</a></sup></li>
+        <li>Monferno <sup><a href="#note23">23</a></sup></li>
+        <li>Infernape <sup><a href="#note23">23</a></sup></li>
+        <li>Garchomp <sup><a href="#note46">46</a></sup></li>
         <li>Pansage <sup><a href="#note22">22</a></sup></li>
         <li>Pansear <sup><a href="#note22">22</a></sup></li>
         <li>Panpour <sup><a href="#note22">22</a></sup></li>
         <li>Rufflet <sup><a href="#note20">20</a></sup></li>
         <li>Braviary <sup><a href="#note20">20</a></sup></li>
-        <li>Chimchar <sup><a href="#note23">23</a></sup></li>
-        <li>Garchomp <sup><a>?</a></sup></li>
+        <li>Cobalion <sup><a href="#note19">19</a></sup></li>
+        <li>Terrakion <sup><a href="#note19">19</a></sup></li>
+        <li>Virizion <sup><a href="#note19">19</a></sup></li>
     </ul>
     <h2>Yūsuke Ōmura</h2>
     <ul>
@@ -658,6 +698,8 @@
         <li>Greninja <sup><a href="#note46">46</a></sup></li>
         <li>Zacian <sup><a href="#note47">47</a></sup></li>
         <li>Zamazenta <sup><a href="#note47">47</a></sup></li>
+        <li>Kubfu <sup><a href="#note53">53</a></sup></li>
+        <li>Urshifu <sup><a href="#note53">53</a></sup></li>
     </ul>
     <h2>Lee HyunJung</h2>
     <ul>
@@ -673,9 +715,13 @@
         <li>Darumaka <sup><a href="#note19">19</a></sup></li>
         <li>Darmanitan <sup><a href="#note19">19</a></sup></li>
         <li>Frillish <sup><a href="#note19">19</a></sup></li>
-        <li>Victini <sup><a href="#note6">6</a></sup></li>
+        <li>Victini <sup><a href="#note6">6</a> <a href="#note46">46</a></sup></li>
         <li>Klefki <sup><a href="#note17">17</a></sup></li>
         <li>Stunfisk <sup><a href="#note7">7</a></sup> <sup><a href="#note19">19</a></sup></li>
+    </ul>
+    <h2>Megumi Mizutani</h2>
+    <ul>
+        <li>Pancham <sup><a href="#note46">46</a></sup></li>
     </ul>
     <h2>Reiko Tanoue</h2>
     <ul>
@@ -739,6 +785,8 @@
         <li>Whirlipede <sup><a href="#note38">38</a></sup></li>
         <li>Scolipede <sup><a href="#note28">28</a> <a href="#note29">29</a> <a href="#note38">38</a></sup></li>
         <li>Shelmet <sup><a href="#note28">28</a></sup></li>
+        <li>Mega Mewtwo Y <sup><a href="#note51">51</a></sup></li>
+        <li>Mega Charizard X <sup><a href="#note52">52</a></sup></li>
     </ul>
     <h2>Saya Tsuruta</h2>
     <ul>
@@ -833,15 +881,23 @@
             </cite></li>
             <li id="note44"><cite><a href="https://twitter.com/ariga_megamix/status/1195152257869737984">https://twitter.com/ariga_megamix/status/1195152257869737984</a></cite></li>
             <li id="note45"><cite><a href="https://twitter.com/JamesTurner_42/status/1201528753731465216">https://twitter.com/JamesTurner_42/status/1201528753731465216</a></cite></li>
-            <li id="note46"><cite><a href="https://pokemon.jeuxonline.info/actualite/44635/soiree-inauguration-pokemon-center-paris">https://pokemon.jeuxonline.info/actualite/44635/soiree-inauguration-pokemon-center-paris</a></cite></li>
+            <li id="note46"><cite>
+                <a href="https://pokemon.jeuxonline.info/actualite/44635/soiree-inauguration-pokemon-center-paris">https://pokemon.jeuxonline.info/actualite/44635/soiree-inauguration-pokemon-center-paris</a><br>
+                <a href="https://www.pokebip.com/news2988__pokemon_center_de_paris_:_les_premieres_images_.html">https://www.pokebip.com/news2988__pokemon_center_de_paris_:_les_premieres_images_.html</a>
+            </cite></li>
             <li id="note47"><cite><a href="https://twitter.com/yusuke_omura/status/1197832943630090241">https://twitter.com/yusuke_omura/status/1197832943630090241</a></cite></li>
             <li id="note48"><cite><a href="https://twitter.com/saya_tsuruta/status/1206016520830107648">https://twitter.com/saya_tsuruta/status/1206016520830107648</a></cite></li>
             <li id="note49"><cite><a href="http://shmuplations.com/pokemon/">http://shmuplations.com/pokemon/</a></cite></li>
             <li id="note50"><cite><a href="https://twitter.com/JamesTurner_42/status/1270467534022574080">https://twitter.com/JamesTurner_42/status/1270467534022574080</a></cite></li>
+            <li id="note51"><cite><a href="https://twitter.com/kitakazeee/status/1149513798115459073">https://twitter.com/kitakazeee/status/1149513798115459073</a></cite></li>
+            <li id="note52"><cite><span>Pokémon Origins (2013)</span></cite></li>
+            <li id="note53"><cite><a href="https://twitter.com/yusuke_omura/status/1280804410176622593">https://twitter.com/yusuke_omura/status/1280804410176622593</a></cite></li>
+            <li id="note54"><cite><a href="https://www.youtube.com/watch?v=iA91WPotG2I">GAME FREAK Illustration Demonstration: Episode One [Ken Sugimori x Pulseman] (YouTube)</a></cite></li>
         </ol>
     </section>
     <h1>Changelog</h1>
     <section>
+        <div><span><time datetime="2020-07-09">2020-07-09</time> - Add source for Mega Mewtwo Y, Mega Charizard X, Kubfu, Urshifu, Darkrai, Pancham, Whismur, Loudred, Monferno, and Infernape</span></div>
         <div><span><time datetime="2020-06-09">2020-06-09</time> - Add source for Centiskorch</span></div>
         <div><span><time datetime="2020-03-25">2020-03-25</time> - Add source for Unown</span></div>
         <div><span><time datetime="2019-12-19">2019-12-19</time> - Add source for Indeedee</span></div>
